@@ -16,6 +16,7 @@
 		1A5D277D297F429D005BAD40 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A5D277C297F429D005BAD40 /* data.json */; };
 		1A5D2780297F5B96005BAD40 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D277F297F5B96005BAD40 /* Constants.swift */; };
 		1A5D2783297F5F49005BAD40 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5D2782297F5F48005BAD40 /* AVKit.framework */; };
+		1A5D2785297F6931005BAD40 /* description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D2784297F6931005BAD40 /* description.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		1A5D277C297F429D005BAD40 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = ../../../data.json; sourceTree = "<group>"; };
 		1A5D277F297F5B96005BAD40 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1A5D2782297F5F48005BAD40 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		1A5D2784297F6931005BAD40 /* description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = description.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				1A5D277C297F429D005BAD40 /* data.json */,
 				1A5D277F297F5B96005BAD40 /* Constants.swift */,
+				1A5D2784297F6931005BAD40 /* description.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				1A5D2776297F4182005BAD40 /* Model.swift in Sources */,
 				1A5D277A297F420B005BAD40 /* ContentModel.swift in Sources */,
 				1A5D276A297F4171005BAD40 /* HomeView.swift in Sources */,
+				1A5D2785297F6931005BAD40 /* description.swift in Sources */,
 				1A5D2768297F4171005BAD40 /* VideoChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

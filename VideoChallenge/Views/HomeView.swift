@@ -11,27 +11,34 @@ import AVKit
 struct HomeView: View {
     
     @EnvironmentObject var model: ContentModel
-//    var film: Film
+    let videoRatio: CGFloat = 1080 / 1920
+    
+    //    var film: Film
     var body: some View {
         
         let url = URL(string: Constants.videoHostUrl)
         
-        
-//        ScrollView {
+        GeometryReader { geo in
             
-            VStack {
+            VStack (alignment: .leading){
                 
                 if url != nil {
                     VideoPlayer(player: AVPlayer(url: url!))
-                        .frame(width: 1080, height: 1920)
-                    
+                        .frame(height: geo.size.width * videoRatio)
                 }
-//                Text(film.name)
-//                    .font(.title)
-//                Text(film.description)
-                    
+                
+                ScrollView {
+                    LazyVStack(alignment: .leading, spacing: 20) {
+                        Text ("Description")
+                            .bold()
+                            .font(.title)
+                        Text(descriptionText)
+                            .multilineTextAlignment(.leading)
+                    }
+                }
+                .padding()
             }
-//        }
+        }
     }
 }
 
